@@ -17,9 +17,9 @@ MKOnlineMusicPlayer 是一款开源的基于 `Meting` 的在线音乐播放器�
 
 ### 相关链接
 -----
-**在线演示** [https://muisc.youte.ml/](https://muisc.youte.ml/)
+**在线演示** [https://music.youte.ml/](https://music.youte.ml/)
 
-**详细介绍** [https://muisc.youte.ml/](https://muisc.youte.ml/)
+**详细介绍** [https://music.youte.ml/](https://music.youte.ml/)
 
 **GitHub** [https://github.com/jing5460/jing5460.github.io](https://github.com/jing5460/jing5460.github.io)
 
