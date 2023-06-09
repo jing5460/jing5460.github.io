@@ -18,7 +18,7 @@
     <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
     <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
     
-    <title>轻谈浅唱 - Player v2.4 由 youte.ml 免费分享 </title>
+    <title>轻谈浅唱 - Player v2.4 由 youtd.cc 免费分享 </title>
     <meta name="description" content="一款开源的基于网易云音乐api的在线音乐播放器。具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。"/>
     <meta name="keywords" content="孟坤播放器,在线音乐播放器,MKOnlinePlayer,网易云音乐,音乐api,音乐播放器源代码"/>
     
@@ -46,35 +46,7 @@
     <link rel="stylesheet" href="plugns/layer/skin/default/layer.css?v=3.0.2302" id="layuicss-skinlayercss">
     
 
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5daa913d2886ff23cf2d8e24f3cb97cf";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
-
-
-<script>
-(function(){
-var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-document.write('<script src="' + src + '" id="sozz"><\/script>');
-})();
-</script>
-<meta name="google-site-verification" content="Pf4a7eHc28gARzVZxadlu2Wu6bt0JQDsR5AHEyuO08o" />
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178949755-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-178949755-1');
-</script>
 
   
 </head>
@@ -89,6 +61,8 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
     </div>
 </div>  <!--class="header"-->
 
+
+
 <!-- 中间主体区域 -->
 <div class="center">
     <div class="container">
@@ -99,6 +73,14 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
                 <span class="btn" data-action="playing" title="正在播放列表">正在播放</span>
                 <span class="btn" data-action="sheet" title="音乐播放列表">播放列表</span>
                 <span class="btn" data-action="search" title="点击搜索音乐">歌曲搜索</span>
+                
+                <a href="https://hit.youtd.cc/" target="_blank">
+
+                <FONT face=楷体_GB2312 color=#e77f52 size=3.2>个人主页</FONT>
+                <FONT face=楷体_GB2312 color=#b2da11 size=3.2>🍃</FONT>
+                
+                </a>
+                
             </div>
         </div>  <!--class="btn-bar"-->
         
@@ -113,6 +95,54 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
         <!-- 右侧封面及歌词展示 -->
         <div class="player" id="player">
             <!--歌曲封面-->
+            
+        <!--小时钟 https://tbz.ltyuanfang.cn/shizhong.html-->
+        <center>
+        <iframe frameborder="0" src="https://time.youtd.cc/shizhong.html" width="100%" height="135px" scrolling="no">
+        </iframe>
+
+        <a href="https://hit.youtd.cc">
+        <FONT face=楷体_GB2312 color=#ffa200 size=1.0> 
+        <FONT color=#fcbe72 size=1.5>✦世界 · 你好！</FONT> </a>
+
+<!--一言api-->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+  });
+</script>     
+            <!--新年倒计时-->
+            <div class="gn_box"><h2>
+            <font color="#E80017">2</font>
+            <font color="#D1002E">0</font>
+            <font color="#BA0045">2</font>
+            <font color="#A3005C">3</font>
+            <font color="#8C0073">年</font>
+            <font color="#E80088"><img src="//Wall.youtd.cc/Poco/chinaos.ico" /></font>
+            <font color="#5E00A1">新</font>
+            <font color="#4700B8">年</font>
+            <font color="#3000CF">倒</font>
+            <font color="#1900E6">计</font>
+            <font color="#0200FD">时</font>
+            </h2><center>
+                <div id="CountMsg" class="HotDate">
+                    <h2>
+                    <FONT face=楷体_GB2312 color=#b2da11 size=2.5>
+                    <span id="t_d">61 天</span>
+                    <span id="t_h">20 时</span>
+                    <span id="t_m">01 分</span>
+                    <span id="t_s">42 秒</span>
+                    </div></center>
+                    <script type="text/javascript">function getRTime() {var NowTime =new Date();var EndTime =new Date(parseInt(NowTime.getFullYear()) + 1 +'-02-01 00:00:00');var lefttime =parseInt((EndTime.getTime() - NowTime.getTime()) / 1000);var d =parseInt(lefttime / (24*60*60));var h =parseInt(lefttime / (60 *60) % 24);var m =parseInt(lefttime / 60 % 60);var s =parseInt(lefttime % 60);d =addZero(d);h =addZero(h);m =addZero(m);s =addZero(s);var day =document.getElementById("t_d");if (day !=null) {day.innerHTML =d + " 天";} var hour =document.getElementById("t_h");if (hour !=null) {hour.innerHTML =h + " 时";} var min =document.getElementById("t_m");if (min !=null) {min.innerHTML =m + " 分";} var sec =document.getElementById("t_s");if (sec !=null) {sec.innerHTML =s + " 秒";} } function addZero(i){return i < 10 ?"0" + i:i + "";} setInterval(getRTime,1000);</script>
+                    </FONT>
+                    </h2><br/>
+                  
             <div class="cover">
                 <img src="images/player_cover.png" class="music-cover" id="music-cover">
             </div>
@@ -120,7 +150,7 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
             <div class="lyric">
                 <ul id="lyric"></ul>
             </div>
-            <div id="music-info" title="点击查看歌曲信息"></div>
+            
         </div>
     </div>  <!--class="container"-->
 </div>  <!--class="center"-->
@@ -141,14 +171,16 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
             </div>
             <div class="volume">
                 <div class="volume-box">  
+                
                     <div id="volume-progress" class="mkpgb-area"></div>
                 </div>
             </div>
         </div>  <!--class="footer"-->
-        
+        <div id="music-info" title="点击查看歌曲信息"></div>
         <div class="progress">
             <div class="progress-box">  
                 <div id="music-progress" class="mkpgb-area"></div>
+                
             </div>
         </div>  <!--class="progress"-->
     </div>  <!--class="container"-->
@@ -181,43 +213,101 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 <!-- 站长统计代码 -->
 <span style="display: none">
     <!-- 各类统计代码都放在这里…… -->
-    
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279586967'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279586967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<!-- 百度统计代码 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?075796a403086b73a33ac6f5323db5b8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+<script>
+(function(){
+var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+<meta name="google-site-verification" content="Pf4a7eHc28gARzVZxadlu2Wu6bt0JQDsR5AHEyuO08o" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178949755-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178949755-1');
+</script>
+
 </span>
 
-		<p style="text-align: center;">
-        <a href="http://mi.4kyu.cc/" title="一只鱼" target="_blank" one-link-mark="yes"><FONT face=楷体_GB2312 color=#b2da11 size=2.9>© 2021 富强 · 自由 · 平等 · 爱国 · </FONT></a>
-        
-        &nbsp; | &nbsp;
-        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279586967'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279586967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-        &nbsp;&nbsp;
-        
-        <span id="momk">本站已运行：
+<br>
 
-        <span id="span_dt_dt">
-        </span>
-        <script>
-        /*2020/10/20*/
-        function show_date_time() {
-        window.setTimeout("show_date_time()", 1e3);
-        var BirthDay = new Date("2021/01/08"),
-        today = new Date,
-        timeold = today.getTime() - BirthDay.getTime(),
-        msPerDay = 864e5,
-        e_daysold = timeold / msPerDay,
-        daysold = Math.floor(e_daysold),
-        e_hrsold = 24 * (e_daysold - daysold),
-        hrsold = Math.floor(e_hrsold),
-        e_minsold = 60 * (e_hrsold - hrsold),
-        minsold = Math.floor(60 * (e_hrsold - hrsold)),
-        seconds = Math.floor(60 * (e_minsold - minsold));
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
-        }
-        show_date_time();
-        </script>
-        <style>
-        #momk{animation:change 10s infinite;font-weight:800; }
-        @keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
-        </style>
+
+<!--网站运行时间表-->
+<p style="text-align: center;">        
+    <a href="https://youte.ml">
+                        <FONT face=楷体_GB2312 color=#559E41 size=2.5> 
+                        <span id="momk"> 🎧 已运行：
+                        <span id="span_dt_dt"></span>
+                        <script>/*2020/10/20*/function show_date_time(){window.setTimeout("show_date_time()",1e3);var BirthDay=new Date("2022/04/18"),today=new Date,timeold=today.getTime()-BirthDay.getTime(),msPerDay=864e5,e_daysold=timeold/msPerDay,daysold=Math.floor(e_daysold),e_hrsold=24*(e_daysold-daysold),hrsold=Math.floor(e_hrsold),e_minsold=60*(e_hrsold-hrsold), minsold=Math.floor(60*(e_hrsold-hrsold)),seconds=Math.floor(60*(e_minsold-minsold));span_dt_dt.innerHTML=daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";}show_date_time();</script><style>#momk{animation:change 10s infinite;font-weight:800;}@keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100%{color:#67bd31;}}</style></p>
+                        </FONT></a>
+
+<!--底部内容-->  
+<p style="text-align: center;">
+            <a href="https://www.youte.ml" >
+            <FONT face=楷体_GB2312 color=#559E41 size=0.2> © 2022 🇨🇳</FONT></a>
+            <span class="sep"> | </span>
+            <FONT face=楷体_GB2312 color=#FF7B38 size=0.8>⚙ 富强· 自由· 平等· 爱国· 民主· 文明· 和谐· 公正· 法治· 敬业· 诚信· 友善 ⚙</FONT>
+            <span id="momk" style="color: #ff0000;">
+                
+            <br>
+            <span class="sep"> 🍂 | </span>
+            <a href="https://beian.miit.gov.cn" >
+            <FONT face=楷体_GB2312 color=#FF7B29 size=0.0> 粤ICP备2022049518号 </FONT></a>
+            <span class="sep"> | </span>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo">
+            <FONT face=楷体_GB2312 color=#FF7B29 size=0.0> 互联网管理平台</FONT></a>
+            <span class="sep"> | 🌿</span>
+            <FONT face=楷体_GB2312 color=#FF7B38 size=0.8>
+            <a class="text-con__line--link" href="mailto:jing207@qq.com" target="_blank"> 联系邮箱 </FONT></a>
+            <span class="sep"> ♪ </span>
+            <a href="https://www.youtd.cc/Music/小米" >
+            <FONT face=楷体_GB2312 color=#FF7B29 size=0.0> 随机音乐 </FONT></a>
+            <span class="sep"> | </span>
+            <a href="https://hao.youtd.cc/" >
+            <FONT face=楷体_GB2312 color=#FF7B29 size=0.0> 一只鱼 主页 </FONT></a>
+
+<!--一言-->
+<p id="hitokoto">:D 获取中...</p>
+<script>
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            const hitokoto = document.getElementById('hitokoto')
+            hitokoto.innerText = data.hitokoto
+        })
+        .catch(console.error)
+</script>  
+
+<!--美化调用微软Bing每日一图-->
+<style>
+body{
+background-image: url(https://wall.youtd.cc/yizhiyu.php)!important;
+}
+.main .login{
+background-color: rgba(255, 255, 255, 0.8)!important;
+}
+</style>
 
 
 </body>
